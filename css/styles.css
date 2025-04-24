@@ -298,7 +298,602 @@ footer {
     padding: 30px 0;
 }
 
-/* Responsive */
+/* Page Banner */
+.page-banner {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 80px 0;
+    position: relative;
+}
+
+.page-banner:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/banner-texture.jpg');
+    background-size: cover;
+    opacity: 0.2;
+}
+
+.page-banner h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.page-banner p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* Journey Page Styles */
+.journey-content {
+    padding: 50px 0;
+}
+
+.journal-entry {
+    background-color: white;
+    border-radius: 5px;
+    padding: 30px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.journal-entry h3 {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 10px;
+}
+
+.testimony-box {
+    background-color: var(--scroll-bg);
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimony-box h3 {
+    color: var(--accent-color);
+    margin-bottom: 20px;
+}
+
+.timeline {
+    padding: 60px 0;
+    background-color: var(--light-bg);
+}
+
+.timeline h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: var(--primary-color);
+}
+
+.timeline-container {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.timeline-container:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 100%;
+    background-color: var(--secondary-color);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.timeline-date {
+    width: 100px;
+    text-align: right;
+    padding-right: 20px;
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+.timeline-content {
+    width: calc(100% - 150px);
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-content h4 {
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+/* Leadership Lessons Page */
+.leadership-intro,
+.historical-intro,
+.transformation-intro {
+    background-color: white;
+    padding: 50px 0;
+}
+
+.intro-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.leadership-principles {
+    padding: 50px 0;
+    background-color: var(--light-bg);
+}
+
+.principle-card {
+    display: flex;
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.principle-number {
+    width: 80px;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.principle-content {
+    padding: 30px;
+}
+
+.principle-content h3 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.principle-quote {
+    background-color: var(--scroll-bg);
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.application {
+    padding: 50px 0;
+    background-color: white;
+    text-align: center;
+}
+
+.application h3 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+/* Transformation Page */
+.before-after {
+    padding: 50px 0;
+    background-color: var(--light-bg);
+}
+
+.before-after h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: var(--primary-color);
+}
+
+.transformation-card {
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.transformation-header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 15px 30px;
+}
+
+.transformation-header h4 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.transformation-content {
+    display: flex;
+    padding: 0;
+}
+
+.before, .after {
+    width: 50%;
+    padding: 20px;
+}
+
+.before {
+    background-color: rgba(0, 0, 0, 0.05);
+    border-right: 1px solid #ddd;
+}
+
+.before h5, .after h5 {
+    color: var(--accent-color);
+    margin-bottom: 15px;
+}
+
+.team-dynamics {
+    padding: 50px 0;
+    background-color: white;
+}
+
+.team-dynamics h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: var(--primary-color);
+}
+
+.marker-card {
+    display: flex;
+    align-items: flex-start;
+    background-color: var(--light-bg);
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.marker-icon {
+    width: 60px;
+    height: 60px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    font-size: 1.5rem;
+}
+
+.marker-content {
+    flex: 1;
+}
+
+.marker-content h4 {
+    color: var(--accent-color);
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+.enemy-testimony, .global-impact {
+    padding: 50px 0;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.testimony-content, .impact-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.enemy-testimony h3, .global-impact h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+/* Historical Context Page */
+.context-grid {
+    padding: 50px 0;
+    background-color: var(--light-bg);
+}
+
+.context-card {
+    background-color: white;
+    border-radius: 5px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.context-card h3 {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 10px;
+}
+
+.timeline-section {
+    padding: 60px 0;
+    background-color: white;
+}
+
+.timeline-section h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: var(--primary-color);
+}
+
+.historical-timeline {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.historical-timeline:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 120px;
+    height: 100%;
+    width: 4px;
+    background-color: var(--secondary-color);
+}
+
+.timeline-event {
+    position: relative;
+    margin-bottom: 30px;
+    padding-left: 150px;
+}
+
+.timeline-date {
+    position: absolute;
+    left: 0;
+    width: 100px;
+    text-align: right;
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+.timeline-info {
+    background-color: var(--light-bg);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.timeline-info:before {
+    content: '';
+    position: absolute;
+    left: -20px;
+    top: 20px;
+    width: 20px;
+    height: 4px;
+    background-color: var(--secondary-color);
+}
+
+.timeline-info h4 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.map-section {
+    padding: 60px 0;
+    background-color: var(--light-bg);
+    text-align: center;
+}
+
+.map-section h3 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: var(--primary-color);
+}
+
+.map-container {
+    max-width: 800px;
+    margin: 0 auto 30px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.responsive-map {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.map-caption {
+    margin-top: 15px;
+    font-style: italic;
+    color: var(--accent-color);
+}
+
+.map-legend {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.legend-color {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border-radius: 3px;
+}
+
+.legend-symbol {
+    width: 20px;
+    text-align: center;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.historical-significance {
+    padding: 60px 0;
+    background-color: white;
+}
+
+.historical-significance h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: var(--primary-color);
+}
+
+.significance-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Reflections Page */
+.journal-section {
+    padding: 50px 0;
+    background-color: white;
+}
+
+.journal-intro {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    text-align: center;
+}
+
+.journal-entry {
+    background-color: white;
+    border-radius: 5px;
+    padding: 30px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.journal-entry h3 {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 10px;
+}
+
+.interactive-section {
+    padding: 60px 0;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.interactive-section h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.reflection-questions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.question-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    padding: 20px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.question-card:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-5px);
+}
+
+.question-card h4 {
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .principle-card {
+        flex-direction: column;
+    }
+    
+    .principle-number {
+        width: 100%;
+        padding: 15px 0;
+    }
+    
+    .transformation-content {
+        flex-direction: column;
+    }
+    
+    .before, .after {
+        width: 100%;
+    }
+    
+    .before {
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+    }
+    
+    .marker-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .marker-icon {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    
+    .historical-timeline:before {
+        left: 20px;
+    }
+    
+    .timeline-event {
+        padding-left: 50px;
+    }
+    
+    .timeline-date {
+        position: relative;
+        left: auto;
+        width: auto;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    
+    .timeline-info:before {
+        left: -30px;
+    }
+}
+
 @media (max-width: 768px) {
     header .container {
         flex-direction: column;
@@ -324,5 +919,51 @@ footer {
     
     blockquote {
         font-size: 1.5rem;
+    }
+    
+    .page-banner h2 {
+        font-size: 2.2rem;
+    }
+    
+    .timeline-container:before {
+        left: 20px;
+    }
+    
+    .timeline-item {
+        flex-direction: column;
+    }
+    
+    .timeline-date {
+        width: auto;
+        text-align: left;
+        padding-left: 50px;
+        margin-bottom: 10px;
+    }
+    
+    .timeline-content {
+        width: 100%;
+        margin-left: 20px;
+    }
+    
+    .journal-entry, .context-card {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .themes-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .hero h2 {
+        font-size: 2rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+    }
+    
+    .reflection-questions {
+        grid-template-columns: 1fr;
     }
 }
